@@ -1,0 +1,15 @@
+WAF_POLICIES:
+  - name: "asm.appA"
+    url: "https://{{ As3Token }}@raw.githubusercontent.com/megamattzilla/f5PublicConfigCommon/1.0.1/wafPolicies/asm.appA.xml"
+  - name: "asm.appB"
+    url: "https://{{ As3Token }}@raw.githubusercontent.com/megamattzilla/f5PublicConfigCommon/1.0.1/wafPolicies/asm.appB.xml"
+IRULES:
+  - name: "Demo_HTTP"
+    url: "https://{{ As3Token }}@raw.githubusercontent.com/megamattzilla/f5PublicConfigCommon/1.0.1/iRules/Demo_HTTP.tcl"
+  - name: "applicationB-rule"
+    url: "https://{{ As3Token }}@raw.githubusercontent.com/megamattzilla/f5PublicConfigCommon/1.0.1/iRules/Demo_HTTP.tcl"
+DATAGROUPS:
+  - name: "header_to_pool"
+    keyDataType: "string"
+    delimiter: ":="
+    url: "https://{{ As3Token }}@raw.githubusercontent.com/megamattzilla/f5PublicConfigCommon/1.0.1/dataGroups/header_to_pool.txt"
