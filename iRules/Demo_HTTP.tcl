@@ -15,4 +15,3 @@ when HTTP_REQUEST {
     reject
   }
 }
-}
