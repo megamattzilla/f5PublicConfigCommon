@@ -1,1 +1,1 @@
-"192.168.1.1" := "demo_pool10"
+"example.com" := "demo_pool10"
